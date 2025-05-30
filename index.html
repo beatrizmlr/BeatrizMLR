@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beatriz M L R - Abogada del Colegio Médico de Cádiz</title>
+    <style>
+        :root {
+            --primary-color: #0056b3;
+            --secondary-color: #003366;
+            --accent-color: #d4af37;
+            --light-color: #f8f9fa;
+            --dark-color: #343a40;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-color: var(--light-color);
+        }
+        
+        header {
+            background: linear-gradient(135deg, var(--secondary-color), var(--primary-color));
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+            position: relative;
+        }
+        
+        .header-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        
+        .subtitle {
+            font-size: 1.2rem;
+            margin-top: 0.5rem;
+            font-weight: 300;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 20px;
+        }
+        
+        nav {
+            background-color: var(--dark-color);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+        
+        nav li {
+            position: relative;
+        }
+        
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 1rem 1.5rem;
+            display: block;
+            transition: background-color 0.3s;
+        }
+        
+        nav a:hover {
+            background-color: var(--primary-color);
+        }
+        
+        section {
+            margin-bottom: 3rem;
+            background: white;
+            padding: 2rem;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        h2 {
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--accent-color);
+            padding-bottom: 0.5rem;
+            margin-top: 0;
+        }
+        
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+        
+        .service-card {
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 1.5rem;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .service-card h3 {
+            color: var(--secondary-color);
+            margin-top: 0;
+        }
+        
+        .contact-info {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1rem;
+        }
+        
+        .contact-item i {
+            margin-right: 1rem;
+            color: var(--primary-color);
+            font-size: 1.5rem;
+            width: 30px;
+            text-align: center;
+        }
+        
+        footer {
+            background-color: var(--dark-color);
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 2rem;
+        }
+        
+        .profile-img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid white;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+            margin: 1rem auto;
+            display: block;
+        }
+        
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+            }
+            
+            nav a {
+                padding: 0.8rem;
+                text-align: center;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <!-- Reemplaza "profile.jpg" con la imagen de perfil de tu madre -->
+            <img src="profile.jpg" alt="Beatriz M L R" class="profile-img">
+            <h1>Beatriz M L R</h1>
+            <p class="subtitle">Abogada del Colegio Médico de Cádiz</p>
+        </div>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="#inicio"><i class="fas fa-home"></i> Inicio</a></li>
+            <li><a href="#sobre-mi"><i class="fas fa-user"></i> Sobre mí</a></li>
+            <li><a href="#servicios"><i class="fas fa-briefcase"></i> Servicios</a></li>
+            <li><a href="#contacto"><i class="fas fa-envelope"></i> Contacto</a></li>
+        </ul>
+    </nav>
+    
+    <div class="container">
+        <section id="inicio">
+            <h2>Bienvenidos</h2>
+            <p>En este despacho jurídico especializado en derecho médico y sanitario, ofrecemos asesoramiento legal integral a profesionales de la salud y pacientes, con el más alto nivel de profesionalismo y ética.</p>
+            <p>Con sede en Cádiz y vinculada al Colegio Médico de la provincia, brindamos soluciones legales adaptadas a las necesidades específicas del sector sanitario.</p>
+        </section>
+        
+        <section id="sobre-mi">
+            <h2>Sobre mí</h2>
+            <p>Soy Beatriz M L R, abogada colegiada especializada en Derecho Sanitario con más de 15 años de experiencia asesorando a profesionales médicos y centros sanitarios en Cádiz.</p>
+            <p>Mi formación y trayectoria profesional se ha centrado en:</p>
+            <ul>
+                <li>Derecho Médico y Sanitario</li>
+                <li>Responsabilidad Profesional Médica</li>
+                <li>Derecho Administrativo Sanitario</li>
+                <li>Protección de Datos en el ámbito sanitario</li>
+                <li>Asesoramiento a instituciones médicas</li>
+            </ul>
+            <p>Colaboro regularmente con el Colegio Médico de Cádiz, ofreciendo formación y asesoramiento a sus colegiados, y participando en comisiones deontológicas y de defensa profesional.</p>
+        </section>
+        
+        <section id="servicios">
+            <h2>Servicios Jurídicos</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>Asesoramiento a profesionales</h3>
+                    <p>Defensa en procedimientos por presunta mala praxis, reclamaciones de responsabilidad profesional, asesoramiento en contratos laborales y relaciones con instituciones sanitarias.</p>
+                </div>
+                
+                <div class="service-card">
+                    <h3>Representación legal</h3>
+                    <p>Representación en procedimientos judiciales y administrativos, negociación con pacientes y familiares, defensa ante colegios profesionales y organismos sanitarios.</p>
+                </div>
+                
+                <div class="service-card">
+                    <h3>Consultoría institucional</h3>
+                    <p>Asesoramiento a clínicas, hospitales y centros sanitarios en cumplimiento normativo, contratación, protección de datos y relaciones con administraciones públicas.</p>
+                </div>
+                
+                <div class="service-card">
+                    <h3>Formación y prevención</h3>
+                    <p>Cursos y talleres para profesionales sanitarios sobre aspectos legales de su práctica, consentimiento informado, historias clínicas y gestión de riesgos legales.</p>
+                </div>
+            </div>
+        </section>
+        
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <div class="contact-info">
+                <div>
+                    <h3>Información de contacto</h3>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Dirección: [Inserte dirección del despacho en Cádiz]</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>Teléfono: [Inserte número de teléfono]</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>Email: [Inserte dirección de email]</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <span>Horario: Lunes a Viernes de 9:00 a 14:00 y de 16:00 a 19:00</span>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3>Colegio Médico de Cádiz</h3>
+                    <div class="contact-item">
+                        <i class="fas fa-external-link-alt"></i>
+                        <span>Página web: <a href="https://www.comcadiz.es" target="_blank">www.comcadiz.es</a></span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Dirección: [Dirección del Colegio Médico de Cádiz]</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>Teléfono: [Teléfono del Colegio]</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    
+    <footer>
+        <p>&copy; 2023 Beatriz M L R - Abogada del Colegio Médico de Cádiz</p>
+        <p>Todos los derechos reservados</p>
+    </footer>
+</body>
+</html>
